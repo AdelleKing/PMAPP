@@ -1,0 +1,353 @@
+
+{% extends 'public_base.html' %}
+
+{% block content %}
+
+
+<body :class="{ 'overflow-hidden max-h-screen': mobileMenu }" class="relative" x-data="{ mobileMenu: false }">
+    <div id="main" class="relative">
+        <div x-data="{
+triggerNavItem(id) {
+    $scroll(id)
+},
+triggerMobileNavItem(id) {
+    mobileMenu = false;
+    this.triggerNavItem(id)
+}
+}">
+
+
+<section>
+<div class="relative bg-cover bg-center bg-no-repeat py-8" style="background-image: url(/static/images/pic2.jpg)">
+    <div class="absolute inset-0 z-20 bg-gradient-to-r from-hero-gradient-from to-hero-gradient-to bg-cover bg-center bg-no-repeat"></div>
+
+    <div class="relative z-30 pt-7 pb-6 sm:pt-26 sm:pb-38 lg:pt-34 lg:pb-38">
+        <div class="flex flex-col items-center justify-center lg:flex-row">
+            <div class="rounded-full border-8 border-rose-800 shadow-xl">
+                <img src="/static/images/me.png" class="h-48 rounded-full sm:h-56" alt="author" />
+            </div>
+            <div class="pt-8 sm:pt-10 lg:pl-8 lg:pt-0">
+                <h1 class="text-center font-header text-4xl text-white sm:text-left sm:text-5xl md:text-6xl">
+                    Hello I'm Adelle King!
+                </h1>
+                <div class="flex flex-col justify-center pt-3 sm:flex-row sm:pt-5 lg:justify-start">
+                    <div class="flex items-center justify-center pl-0 sm:justify-start md:pl-1">
+                        <p class="font-body text-lg uppercase text-white">Let's connect</p>
+                        <div class="hidden sm:block">
+                            <i class="bx bx-chevron-right text-3xl text-white"></i>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center pt-1 pl-2 sm:justify-start sm:pt-0">
+                        <a href="/">
+                            <i class="bx bxl-facebook-square text-2xl text-white hover:text-yellow"></i>
+                        </a>
+                        <a href="/" class="pl-4">
+                            <i class="bx bxl-twitter text-2xl text-white hover:text-yellow"></i>
+                        </a>
+                        <a href="/" class="pl-4">
+                            <i class="bx bxl-dribbble text-2xl text-white hover:text-yellow"></i>
+                        </a>
+                        <a href="/" class="pl-4">
+                            <i class="bx bxl-linkedin text-2xl text-white hover:text-yellow"></i>
+                        </a>
+                        <a href="/" class="pl-4">
+                            <i class="bx bxl-instagram text-2xl text-white hover:text-yellow"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<section>
+<div class="bg-grey-50" id="about">
+    <div class=" flex flex-col items-center py-16 pl-3 md:py-20 lg:flex-row">
+        <div class="w-full text-center sm:w-3/4 lg:w-3/5 lg:text-left pr-3">
+            <h2 class="font-header text-4xl font-semibold uppercase text-rose-700 sm:text-5xl lg:text-6xl">
+                Who am I?
+            </h2>
+            <h4 class="pt-6 font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
+                I'm Adelle King, a Software Developer, Data Analyst & Automation 
+            </h4>
+            <p class="pt-6 font-body leading-relaxed text-grey-20">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+            </p>
+            <div class="flex flex-col justify-center pt-6 pl-3 sm:flex-row lg:justify-start">
+                <div class="flex items-center justify-center sm:justify-start">
+                    <p class="font-body text-lg font-semibold uppercase text-grey-20">
+                        Connect with me
+                    </p>
+                    <div class="hidden sm:block">
+                        <i class="bx bx-chevron-right text-2xl text-primary"></i>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center pt-1 pl-2 sm:justify-start sm:pt-0">
+                    <a href="/">
+                        <i class="bx bxl-facebook-square text-2xl text-rose-700 hover:text-yellow"></i>
+                    </a>
+                    <a href="/" class="pl-4">
+                        <i class="bx bxl-twitter text-2xl text-rose-700 hover:text-yellow"></i>
+                    </a>
+                    <a href="/" class="pl-4">
+                        <i class="bx bxl-dribbble text-2xl text-rose-700 hover:text-yellow"></i>
+                    </a>
+                    <a href="/" class="pl-4">
+                        <i class="bx bxl-linkedin text-2xl text-rose-700 hover:text-yellow"></i>
+                    </a>
+                    <a href="/" class="pl-4">
+                        <i class="bx bxl-instagram text-2xl text-rose-700 hover:text-yellow"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="w-full pl-4 pt-10 sm:w-3/4 lg:w-2/5 lg:pl-12 lg:pt-0">
+            <div>
+                <div class="flex items-end justify-evenly">
+                    <h5 class="font-body font-semibold uppercase text-black">
+                        HTML & CSS
+                    </h5>
+                    <h3 class="font-body text-2xl font-bold text-rose-700">95%</h3>
+                </div>
+                <div class="mt-2 h-2 w-full rounded-full bg-lila">
+                    <div class="h-3 rounded-full bg-rose-700" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="pt-3">
+                <div class="flex items-end justify-evenly">
+                    <h5 class="font-body font-semibold uppercase text-black">Python</h5>
+                    <h3 class="font-body text-2xl font-bold text-rose-700">80%</h3>
+                </div>
+                <div class="mt-2 h-2 w-full rounded-full bg-lila">
+                    <div class="h-3 rounded-full bg-rose-700" style="width: 70%"></div>
+                </div>
+            </div>
+            <div class="pt-3">
+                <div class="flex items-end justify-evenly">
+                    <h5 class="font-body font-semibold uppercase text-black">
+                        Javascript
+                    </h5>
+                    <h3 class="font-body text-2xl font-bold text-rose-700">98%</h3>
+                </div>
+                <div class="mt-2 h-2 w-full rounded-full bg-lila">
+                    <div class="h-3 rounded-full bg-rose-700" style="width: 98%"></div>
+                </div>
+            </div>
+            <div class="pt-3">
+                <div class="flex items-end justify-evenly">
+                    <h5 class="font-body font-semibold uppercase text-black">Django</h5>
+                    <h3 class="font-body text-2xl font-bold text-rose-700">91%</h3>
+                </div>
+                <div class="mt-2 h-2 w-full rounded-full bg-lila">
+                    <div class="h-3 rounded-full bg-rose-700" style="width: 91%"></div>
+                </div>
+            </div>
+        </div>
+       
+        <div class="w-full pl-4 pr-3 pt-10 sm:w-3/4 lg:w-2/5 lg:pl-12 lg:pt-0">
+            <div>
+                <div class="flex items-end justify-evenly">
+                    <h5 class="font-body font-semibold uppercase text-black">
+                        AWS
+                    </h5>
+                    <h3 class="font-body text-2xl font-bold text-rose-700">95%</h3>
+                </div>
+                <div class="mt-2 h-2 w-full rounded-full bg-lila">
+                    <div class="h-3 rounded-full bg-rose-700" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="pt-3">
+                <div class="flex items-end justify-evenly">
+                    <h5 class="font-body font-semibold uppercase text-black">Tableau</h5>
+                    <h3 class="font-body text-2xl font-bold text-rose-700">80%</h3>
+                </div>
+                <div class="mt-2 h-2 w-full rounded-full bg-lila">
+                    <div class="h-3 rounded-full bg-rose-700" style="width: 70%"></div>
+                </div>
+            </div>
+            <div class="pt-3">
+                <div class="flex items-end justify-evenly">
+                    <h5 class="font-body font-semibold uppercase text-black">
+                        Database Management 
+                    </h5>
+                    <h3 class="font-body text-2xl font-bold text-rose-700">98%</h3>
+                </div>
+                <div class="mt-2 h-2 w-full rounded-full bg-lila">
+                    <div class="h-3 rounded-full bg-rose-700" style="width: 98%"></div>
+                </div>
+            </div>
+            <div class="pt-3">
+                <div class="flex items-end justify-evenly">
+                    <h5 class="font-body font-semibold uppercase text-black">Canva</h5>
+                    <h3 class="font-body text-2xl font-bold text-rose-700">91%</h3>
+                </div>
+                <div class="mt-2 h-2 w-full rounded-full bg-lila">
+                    <div class="h-3 rounded-full bg-rose-700" style="width: 91%"></div>
+                </div>
+            </div>
+        </div>
+</section>
+
+<section>
+    <div class="py-16 md:py-20" id="services">
+        <h2 class="text-center font-header text-4xl font-semibold uppercase text-rose-700 sm:text-5xl lg:text-6xl">
+            How I can help you!
+        </h2>
+        <h3 class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
+            These are the services I offer
+        </h3>
+
+        <div class="grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3">
+            <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+                <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                    <div class="hidden group-hover:block">
+                        <img src="/static/images/icon-development-black.svg" alt="development icon" />
+                    </div>
+                    <div class="block group-hover:hidden">
+                        <img src="/static/images/icon-development-black.svg" alt="development icon" />
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h3 class="pt-8 text-lg font-semibold uppercase text-rose-700 group-hover:text-white lg:text-xl">
+                        WEB DEVELOPMENT
+                    </h3>
+                    <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                        Developing comprehensive websites that include SEO optimization and hosting support.
+                    </p>
+                </div>
+            </div>
+            <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+                <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                    <div class="hidden group-hover:block">
+                        <img src="/static/images/icon-content-white.svg" alt="content marketing icon" />
+                    </div>
+                    <div class="block group-hover:hidden">
+                        <img src="/static/images/icon-content-black.svg" alt="content marketing icon" />
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h3 class="pt-8 text-lg font-semibold uppercase text-rose-700 group-hover:text-white lg:text-xl">
+                        Automation
+                    </h3>
+                    <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                        Empowering you to streamline your processes, whether transitioning from paper-based to digital or automating system-level tasks.
+                    </p>
+                </div>
+            </div>
+            <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+                <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                    <div class="hidden group-hover:block">
+                        <img src="/static/images/icon-mobile-white.svg" alt="Mobile Application icon" />
+                    </div>
+                    <div class="block group-hover:hidden">
+                        <img src="/static/images/icon-mobile-black.svg" alt="Mobile Application icon" />
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h3 class="pt-8 text-lg font-semibold uppercase text-rose-700 group-hover:text-white lg:text-xl">
+                       Digital products
+                    </h3>
+                    <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                        Using Canva to produce digital material for you to share with your customer.
+                    </p>
+                </div>
+            </div>
+            <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+                <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                    <div class="hidden group-hover:block">
+                        <img src="/static/imagesicon-email-white.svg" alt="Email Marketing icon" />
+                    </div>
+                    <div class="block group-hover:hidden">
+                        <img src="/static/images/icon-email-black.svg" alt="Email Marketing icon" />
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h3 class="pt-8 text-lg font-semibold uppercase text-rose-700 group-hover:text-white lg:text-xl">
+                        Data Visualisation
+                    </h3>
+                    <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                        Getting the most out of your data by providing visualisations using tableau or PowerBI
+                    </p>
+                </div>
+            </div>
+            <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+                <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                    <div class="hidden group-hover:block">
+                        <img src="/static/images/icon-design-white.svg" alt="Theme Design icon" />
+                    </div>
+                    <div class="block group-hover:hidden">
+                        <img src="/static/images/icon-design-black.svg" alt="Theme Design icon" />
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h3 class="pt-8 text-lg font-semibold uppercase text-rose-700 group-hover:text-white lg:text-xl">
+                        1-1 coaching
+                    </h3>
+                    <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                        Supporting you to continue managing your own digital prescence.
+                    </p>
+                </div>
+            </div>
+            <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+                <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                    <div class="hidden group-hover:block">
+                        <img src="/static/images/icon-graphics-white.svg" alt="Graphic Design icon" />
+                    </div>
+                    <div class="block group-hover:hidden">
+                        <img src="/static/images/icon-graphics-black.svg" alt="Graphic Design icon" />
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h3 class="pt-8 text-lg font-semibold uppercase text-rose-700 group-hover:text-white lg:text-xl">
+                        Database Management
+                    </h3>
+                    <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                        Get the most of your data, providing database creation, maintenace and scaling. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+<section>
+    <div class=" py-16 md:py-20" id="portfolio">
+        <h2 class="text-center font-header text-4xl font-semibold uppercase text-rose-700 sm:text-5xl lg:text-6xl">
+            View my Portfolio
+        </h2>
+        <h3 class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
+            Here's what I have done with the past
+        </h3>
+
+        <div class="mx-auto grid w-full grid-cols-1 gap-8 pt-12 sm:w-3/4 md:gap-10 lg:w-full lg:grid-cols-2">
+            <a href="/" class="mx-auto transform transition-all hover:scale-105 md:mx-0">
+                <img src="/assets/img/portfolio-apple.jpeg" class="w-full shadow" alt="portfolio image" />
+            </a>
+            <a href="/" class="mx-auto transform transition-all hover:scale-105 md:mx-0">
+                <img src="/assets/img/portfolio-stripe.jpeg" class="w-full shadow" alt="portfolio image" />
+            </a>
+            <a href="/" class="mx-auto transform transition-all hover:scale-105 md:mx-0">
+                <img src="/assets/img/portfolio-fedex.jpeg" class="w-full shadow" alt="portfolio image" />
+            </a>
+            <a href="/" class="mx-auto transform transition-all hover:scale-105 md:mx-0">
+                <img src="/assets/img/portfolio-microsoft.jpeg" class="w-full shadow" alt="portfolio image" />
+            </a>
+        </div>
+    </div>
+
+</section>
+  
+    
+
+
+
+{% endblock %}

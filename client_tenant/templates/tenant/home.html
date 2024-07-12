@@ -1,0 +1,41 @@
+{% extends 'tenant_home.html' %}
+
+{% block title %} {{ request.tenant.name }} {% endblock %}
+
+{% block content %}
+<div>
+    <h1>
+        Welcome to
+        <strong class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
+            Adelle's World
+        </strong>
+    </h1>
+    <div class="mx-auto w-full max-w-2xl grid grid-cols-1 lg:grid-cols-2 gap-4 my-8 px-4 lg:mx-0">
+        <a href="{% url 'client_tenant:index' %}" target="_self" class="p-5 border rounded border-gray-200 hover:border-purple-400">
+            <h3>
+                Project DashBoard →</h3>
+            <p></p>
+        </a>
+
+        <a href="#" target="_blank" class="p-5 border rounded border-gray-200 hover:border-purple-400">
+            <h3>
+                Notifications →</h3>
+            <p></p>
+        </a>
+    </div>
+    <div class="mx-auto w-full max-w-2xl grid grid-cols-1 lg:grid-cols-2 gap-4 my-8 px-4 lg:mx-0">
+        <a href="#" target="_blank" class="p-5 border rounded border-gray-200 hover:border-purple-400">
+            <h3>
+                Account Settings →</h3>
+            <p></p>
+        </a>
+
+        <a href="#" target="_blank" class="p-5 border rounded border-gray-200 hover:border-purple-400">
+            <h3>
+                Help →</h3>
+            <p></p>
+        </a>
+    </div>
+</div>
+
+{% endblock %}

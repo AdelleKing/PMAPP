@@ -1,0 +1,90 @@
+{% extends 'public_base.html' %}
+
+{% block content %}
+
+<!--
+  Heads up! 👋
+
+  This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
+-->
+
+<section class="relative bg-cover bg-center bg-no-repeat" style="background-image: url('static/images/pic1.jpg')" ;>
+  <div class="absolute inset-0 bg-gradient-to-r from-white via-black/70 to-transparent"></div>
+  <div class="relative mx-auto max-w-screen-xl px-1 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
+    <div class="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
+      <h1 class="text-3xl font-extrabold sm:text-5xl">
+        Elevating YOUR <strong class="block font-extrabold text-rose-700"> Digital Presence </strong>
+      </h1>
+      <p class="mt-4 max-w-lg sm:text-xl/relaxed">
+        Transform your online identity into a beacon of success. We elevate and safeguard your digital presence,
+        ensuring it flourishes in the ever-evolving online world.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-4 text-center">
+        <a href="#"
+          class="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto">
+          Get Started
+        </a>
+
+        <a href="#" class="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto">
+          Learn More
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="flex flex-col items-center justify-center text-center p-8">
+  <div>
+    <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+      <p class=text-rose-700>Digital Prescence,</p> supporting you throughout your digital journey.
+    </h2>
+    <p class="text-lg mt-4 text-slate-600">
+       We take the time to understand where you are on your digital journey and the goals you're working towards, shaping a plan <br> 
+       to realise these goals and to continually find ways to help you concentrate on what really matters. 
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="grid grid-cols-3 px-4 gap-16 mt-16">    
+    <div class="flex gap-4 items-start">    
+      <div>
+        <h3 class="font-semibold text-3xl text-center text-rose-700 ">Review <i class="fa-solid fa-arrows-spin text-black"></i></h3>
+        <p class="text-slate-500 mt-2 leading-relaxed">Reviewing where your business is currently and scoping the options which could enhance your business. We take the time to understand what constraints you are facing and how best technology can support.</p>
+      </div>
+    </div> 
+    <div class="flex gap-4 items-start">      
+      <div>
+        <h3 class="font-semibold text-3xl text-center text-rose-700">Implement <i class="fa-solid fa-list-check text-black"></i></h3>
+        <p class="text-slate-500 mt-2 leading-relaxed">Putting a workable plan in place to suit your budget and time restraints. Digital Presence has a bespoke work management tool
+          providing real-time updates.
+        </p>
+      </div>
+    </div>
+    <div class="flex gap-4 items-start">     
+      <div>
+        <h3 class="font-semibold text-3xl text-center text-rose-700">Maintain <i class="fa-solid fa-pencil text-black"></i></h3>
+        <p class="text-slate-500 mt-2 leading-relaxed">Support when you need it, how you need it to maintain your digital infrastructure. 
+          We'll keep you upto date with relevant information and guidance as the industry continues to evolve</p>
+      </div>
+    </div>
+    <!-- Repeat the above block two more times to fill the row -->
+  </div>
+</section>
+
+<section>
+  <div class="mt-24">
+    <h2 class="text-center text-slate-500">Works with your technologies</h2>
+    <div class="flex gap-8 md:gap-20 items-center justify-center mt-10 flex-wrap">
+      
+  
+       <i class="fa-brands fa-python size-20 md:size-30"></i> 
+       <i class="fa-brands fa-js"></i>
+      
+  
+    </div>
+  </div>
+</section>
+
+    
+{% endblock %}

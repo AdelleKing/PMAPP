@@ -1,0 +1,136 @@
+/*#1A4624 - green
+#112b40- blue 
+#401118 - red */
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+    
+    margin: 0; /* Optional: Remove default margin */
+  }
+  
+/******Index.html*******/
+
+.homeContainer{
+    position: relative;
+}
+
+.homeLogo{
+    position: absolute; 
+    top: 0; 
+    left: 0;
+  }
+img{
+    height: 100%;
+    width: 100%;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+.homeH1{
+    position: absolute; 
+    top: 10%;     
+    left:20%;
+    width: 35%;
+    transform: translate(-50%, -50%);
+    color: #401118;
+}
+
+.homeH1R{
+    position: absolute; 
+    top: 10%; 
+    left: 80%; 
+    width: 35%;
+    transform: translate(-50%, -50%);
+    color: #401118;
+}
+
+.homeH2 {
+    position: absolute; 
+    top: 60%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: rgb(128, 126, 126);
+}
+
+.navbar{
+    position: absolute; 
+    top: 75%; 
+    left: 50%; 
+    transform: translate(-50%, -50%)
+}
+
+.links{
+    display: flex;
+    color: #401118;
+    font-size: 50px;
+    margin-right: 7rem;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: center;
+
+}
+
+a:hover{
+    color: #112b40;
+}
+
+
+.container{
+        position: absolute; 
+        top: 88%; 
+        left: 50%; 
+        transform: translate(-50%, -50%)
+}
+
+.list-inline-item:not(:last-child){
+margin-right: 7rem ;
+}
+
+
+
+.socials{
+    color: #401118;
+    font-size: 150%;
+}
+
+
+
+/****** projectItem page *****/
+
+#info{
+    color: red;
+}
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*Your Custom CSS Goes here*/
+
+h1 {
+  @apply text-4xl tracking-tighter mb-3 text-center lg:text-7xl;
+}
+
+h3 {
+  @apply text-2xl font-bold mb-3;
+}
+
+/* Syntax Highlighting*/
+
+body :not(pre) > code[class*="language-"],
+body pre[class*="language-"] {
+  @apply bg-gray-800;
+}
