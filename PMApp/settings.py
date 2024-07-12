@@ -129,8 +129,10 @@ TEMPLATES = [
 
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
+AUTH_USER_MODEL = "client.CustomUser"
 
 AUTHENTICATION_BACKENDS = (
+    'client.backends.TenantBackend',
     'django.contrib.auth.backends.ModelBackend',
     'allauth.account.auth_backends.AuthenticationBackend',
 )
