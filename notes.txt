@@ -1,0 +1,6 @@
+in urls.py I need a redirect to the login form from the clients link
+in urls.py I need a url redirect to client_tenant home/index.html
+
+I need a login form page - think this is render automatically from froms.py??
+
+in views .py when the login submit button is click it runs this view

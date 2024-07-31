@@ -4,6 +4,6 @@ from .views import *
 
 urlpatterns = [
     path('', index, name='client'),
-    path('accounts/login/', TenantLoginView.as_view(), name='tenant_login'),
+    
 ]
 

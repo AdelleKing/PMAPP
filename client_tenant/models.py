@@ -1,7 +1,8 @@
 from django.db import models
-from django.contrib.auth.models import User
+from django.contrib.auth.models import AbstractUser
 from django.utils import timezone
 from django.conf import settings
+from client.models import Client
 
 
 class Project(models.Model):
@@ -26,5 +27,6 @@ class Comment(models.Model):
             return f'{self.text[:20]}'
         except:
             return f'no comments'
-    
+        
+
 
